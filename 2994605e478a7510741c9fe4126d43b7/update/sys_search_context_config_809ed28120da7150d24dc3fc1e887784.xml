@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_context_config">
+    <sys_search_context_config action="INSERT_OR_UPDATE">
+        <collapse_attachment>false</collapse_attachment>
+        <enable_exact_match>true</enable_exact_match>
+        <evam_definition/>
+        <genius_results_limit/>
+        <hit_highlighting>false</hit_highlighting>
+        <name>QuizNow Workspace - Workspace Search</name>
+        <search_engine>zing</search_engine>
+        <search_profile/>
+        <search_results_limit>10</search_results_limit>
+        <show_tab_counts>false</show_tab_counts>
+        <spell_check>false</spell_check>
+        <suggestions_to_show_limit>10</suggestions_to_show_limit>
+        <sys_class_name>sys_search_context_config</sys_class_name>
+        <sys_created_by>brad.tilton</sys_created_by>
+        <sys_created_on>2023-11-02 18:44:32</sys_created_on>
+        <sys_id>809ed28120da7150d24dc3fc1e887784</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>QuizNow Workspace - Workspace Search</sys_name>
+        <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
+        <sys_update_name>sys_search_context_config_809ed28120da7150d24dc3fc1e887784</sys_update_name>
+        <sys_updated_by>brad.tilton</sys_updated_by>
+        <sys_updated_on>2023-11-02 18:44:32</sys_updated_on>
+        <ts_index_group/>
+        <view/>
+    </sys_search_context_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=809ed28120da7150d24dc3fc1e887784"/>
+</record_update>

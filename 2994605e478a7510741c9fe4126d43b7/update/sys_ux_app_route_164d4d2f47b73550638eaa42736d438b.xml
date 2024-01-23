@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="QuizNow Game">ee8297cb47ffb150638eaa42736d43f9</app_config>
+        <description/>
+        <extension_point/>
+        <fields>accessCode</fields>
+        <icon/>
+        <name>Results</name>
+        <optional_parameters>screenName</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>results</route_type>
+        <screen_type display_value="Results">5a4d4d2f47b73550638eaa42736d4388</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-01-23 20:48:23</sys_created_on>
+        <sys_id>164d4d2f47b73550638eaa42736d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Results</sys_name>
+        <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
+        <sys_update_name>sys_ux_app_route_164d4d2f47b73550638eaa42736d438b</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-01-23 20:48:23</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=164d4d2f47b73550638eaa42736d438b"/>
+</record_update>

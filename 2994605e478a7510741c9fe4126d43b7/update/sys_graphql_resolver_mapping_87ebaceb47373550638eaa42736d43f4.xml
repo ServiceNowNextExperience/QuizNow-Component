@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_resolver_mapping">
+    <sys_graphql_resolver_mapping action="INSERT_OR_UPDATE">
+        <path>QuizInstance:quiz</path>
+        <resolver display_value="Quiz Resolver">d3007f4b4773f150638eaa42736d430c</resolver>
+        <schema display_value="Quizifier">8256c5d2477bfd10638eaa42736d439e</schema>
+        <sys_class_name>sys_graphql_resolver_mapping</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-01-23 18:22:52</sys_created_on>
+        <sys_id>87ebaceb47373550638eaa42736d43f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
+        <sys_update_name>sys_graphql_resolver_mapping_87ebaceb47373550638eaa42736d43f4</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-01-23 18:22:52</sys_updated_on>
+    </sys_graphql_resolver_mapping>
+</record_update>

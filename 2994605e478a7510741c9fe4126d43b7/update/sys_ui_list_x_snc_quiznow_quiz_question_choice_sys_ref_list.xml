@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_quiznow_quiz_question_choice" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice</element>
+            <list_id display_value="x_snc_quiznow_quiz_question_choice" element="NULL" name="x_snc_quiznow_quiz_question_choice" parent="NULL" relationship="NULL" sys_domain="global" view="00abf051b9103110d0adbb64e3a1e94f">59cf7b4e4737fd10638eaa42736d432b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-01-19 17:57:18</sys_created_on>
+            <sys_id>55cf7b4e4737fd10638eaa42736d432c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-01-19 17:57:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>correct_answer</element>
+            <list_id display_value="x_snc_quiznow_quiz_question_choice" element="NULL" name="x_snc_quiznow_quiz_question_choice" parent="NULL" relationship="NULL" sys_domain="global" view="00abf051b9103110d0adbb64e3a1e94f">59cf7b4e4737fd10638eaa42736d432b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-01-19 17:57:18</sys_created_on>
+            <sys_id>59cf7b4e4737fd10638eaa42736d432c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-01-19 17:57:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>order</element>
+            <list_id display_value="x_snc_quiznow_quiz_question_choice" element="NULL" name="x_snc_quiznow_quiz_question_choice" parent="NULL" relationship="NULL" sys_domain="global" view="00abf051b9103110d0adbb64e3a1e94f">59cf7b4e4737fd10638eaa42736d432b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-01-19 17:57:18</sys_created_on>
+            <sys_id>5dcf7b4e4737fd10638eaa42736d432c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-01-19 17:57:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>question</element>
+            <list_id display_value="x_snc_quiznow_quiz_question_choice" element="NULL" name="x_snc_quiznow_quiz_question_choice" parent="NULL" relationship="NULL" sys_domain="global" view="00abf051b9103110d0adbb64e3a1e94f">59cf7b4e4737fd10638eaa42736d432b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-01-19 17:57:18</sys_created_on>
+            <sys_id>51cf7b4e4737fd10638eaa42736d432d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-01-19 17:57:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_snc_quiznow_quiz_question_choice" element="NULL" name="x_snc_quiznow_quiz_question_choice" parent="NULL" relationship="NULL" sys_domain="global" view="00abf051b9103110d0adbb64e3a1e94f">59cf7b4e4737fd10638eaa42736d432b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-01-19 17:57:18</sys_created_on>
+            <sys_id>55cf7b4e4737fd10638eaa42736d432d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-01-19 17:57:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_quiznow_quiz_question_choice</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-01-19 17:57:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>59cf7b4e4737fd10638eaa42736d432b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_quiznow_quiz_question_choice</sys_name>
+            <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_quiznow_quiz_question_choice_sys_ref_list</sys_update_name>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-01-19 17:57:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">00abf051b9103110d0adbb64e3a1e94f</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

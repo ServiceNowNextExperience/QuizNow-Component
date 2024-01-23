@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dcb7a61d47dab150638eaa42736d436f" label="Quiz answer" max_length="40" name="x_snc_quiznow_quiz_answer" type="collection">
+        <element label="Answer time" max_length="40" name="answer_time" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Points" max_length="40" name="points" type="integer"/>
+        <element label="Question" max_length="32" name="question" reference="x_snc_quiznow_quiz_question" type="reference"/>
+        <element label="Question choice" max_length="32" name="question_choice" reference="x_snc_quiznow_quiz_question_choice" type="reference"/>
+        <element label="Quiz instance" max_length="32" name="quiz_instance" reference="x_snc_quiznow_quiz_instance" type="reference"/>
+        <element label="Quiz instance user" max_length="32" name="quiz_instance_user" reference="x_snc_quiznow_quiz_instance_user" type="reference"/>
+        <index name="index">
+            <element name="question"/>
+        </index>
+        <index name="index2">
+            <element name="question_choice"/>
+        </index>
+        <index name="index3">
+            <element name="quiz_instance"/>
+        </index>
+        <index name="index4">
+            <element name="quiz_instance_user"/>
+        </index>
+    </element>
+</database>

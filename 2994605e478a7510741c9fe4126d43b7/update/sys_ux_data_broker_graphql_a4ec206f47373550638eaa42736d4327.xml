@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_snc_quiznow.Get Quiz Instance by Access Code</api_name>
+        <description>Gets the quiz instance and details about the quiz including the name, questions and choices.</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Quiz Instance by Access Code</name>
+        <output_schema>{&#13;
+  "$schema": "http://json-schema.org/draft-04/schema#",&#13;
+  "type": "object",&#13;
+  "properties": {&#13;
+    "data": {&#13;
+      "type": "object",&#13;
+      "properties": {&#13;
+        "xSncQuiznow": {&#13;
+          "type": "object",&#13;
+          "properties": {&#13;
+            "quizifier": {&#13;
+              "type": "object",&#13;
+              "properties": {&#13;
+                "getQuizInstanceByAccessCode": {&#13;
+                  "type": "object",&#13;
+                  "properties": {&#13;
+                    "id": {&#13;
+                      "type": "string"&#13;
+                    },&#13;
+                    "state": {&#13;
+                      "type": "string"&#13;
+                    },&#13;
+                    "number": {&#13;
+                      "type": "string"&#13;
+                    },&#13;
+                    "quiz": {&#13;
+                      "type": "object",&#13;
+                      "properties": {&#13;
+                        "id": {&#13;
+                          "type": "string"&#13;
+                        },&#13;
+                        "name": {&#13;
+                          "type": "string"&#13;
+                        },&#13;
+                        "questions": {&#13;
+                          "type": "array",&#13;
+                          "items": [&#13;
+                            {&#13;
+                              "type": "object",&#13;
+                              "properties": {&#13;
+                                "id": {&#13;
+                                  "type": "string"&#13;
+                                },&#13;
+                                "order": {&#13;
+                                  "type": "integer"&#13;
+                                },&#13;
+                                "question": {&#13;
+                                  "type": "string"&#13;
+                                },&#13;
+                                "correctAnswer": {&#13;
+                                  "type": "string"&#13;
+                                },&#13;
+                                "choices": {&#13;
+                                  "type": "array",&#13;
+                                  "items": [&#13;
+                                    {&#13;
+                                      "type": "object",&#13;
+                                      "properties": {&#13;
+                                        "id": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "text": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "isCorrectAnswer": {&#13;
+                                          "type": "boolean"&#13;
+                                        }&#13;
+                                      },&#13;
+                                      "required": [&#13;
+                                        "id",&#13;
+                                        "text",&#13;
+                                        "isCorrectAnswer"&#13;
+                                      ]&#13;
+                                    },&#13;
+                                    {&#13;
+                                      "type": "object",&#13;
+                                      "properties": {&#13;
+                                        "id": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "text": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "isCorrectAnswer": {&#13;
+                                          "type": "boolean"&#13;
+                                        }&#13;
+                                      },&#13;
+                                      "required": [&#13;
+                                        "id",&#13;
+                                        "text",&#13;
+                                        "isCorrectAnswer"&#13;
+                                      ]&#13;
+                                    },&#13;
+                                    {&#13;
+                                      "type": "object",&#13;
+                                      "properties": {&#13;
+                                        "id": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "text": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "isCorrectAnswer": {&#13;
+                                          "type": "boolean"&#13;
+                                        }&#13;
+                                      },&#13;
+                                      "required": [&#13;
+                                        "id",&#13;
+                                        "text",&#13;
+                                        "isCorrectAnswer"&#13;
+                                      ]&#13;
+                                    },&#13;
+                                    {&#13;
+                                      "type": "object",&#13;
+                                      "properties": {&#13;
+                                        "id": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "text": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "isCorrectAnswer": {&#13;
+                                          "type": "boolean"&#13;
+                                        }&#13;
+                                      },&#13;
+                                      "required": [&#13;
+                                        "id",&#13;
+                                        "text",&#13;
+                                        "isCorrectAnswer"&#13;
+                                      ]&#13;
+                                    }&#13;
+                                  ]&#13;
+                                }&#13;
+                              },&#13;
+                              "required": [&#13;
+                                "id",&#13;
+                                "order",&#13;
+                                "question",&#13;
+                                "correctAnswer",&#13;
+                                "choices"&#13;
+                              ]&#13;
+                            },&#13;
+                            {&#13;
+                              "type": "object",&#13;
+                              "properties": {&#13;
+                                "id": {&#13;
+                                  "type": "string"&#13;
+                                },&#13;
+                                "order": {&#13;
+                                  "type": "integer"&#13;
+                                },&#13;
+                                "question": {&#13;
+                                  "type": "string"&#13;
+                                },&#13;
+                                "correctAnswer": {&#13;
+                                  "type": "string"&#13;
+                                },&#13;
+                                "choices": {&#13;
+                                  "type": "array",&#13;
+                                  "items": [&#13;
+                                    {&#13;
+                                      "type": "object",&#13;
+                                      "properties": {&#13;
+                                        "id": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "text": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "isCorrectAnswer": {&#13;
+                                          "type": "boolean"&#13;
+                                        }&#13;
+                                      },&#13;
+                                      "required": [&#13;
+                                        "id",&#13;
+                                        "text",&#13;
+                                        "isCorrectAnswer"&#13;
+                                      ]&#13;
+                                    },&#13;
+                                    {&#13;
+                                      "type": "object",&#13;
+                                      "properties": {&#13;
+                                        "id": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "text": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "isCorrectAnswer": {&#13;
+                                          "type": "boolean"&#13;
+                                        }&#13;
+                                      },&#13;
+                                      "required": [&#13;
+                                        "id",&#13;
+                                        "text",&#13;
+                                        "isCorrectAnswer"&#13;
+                                      ]&#13;
+                                    },&#13;
+                                    {&#13;
+                                      "type": "object",&#13;
+                                      "properties": {&#13;
+                                        "id": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "text": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "isCorrectAnswer": {&#13;
+                                          "type": "boolean"&#13;
+                                        }&#13;
+                                      },&#13;
+                                      "required": [&#13;
+                                        "id",&#13;
+                                        "text",&#13;
+                                        "isCorrectAnswer"&#13;
+                                      ]&#13;
+                                    },&#13;
+                                    {&#13;
+                                      "type": "object",&#13;
+                                      "properties": {&#13;
+                                        "id": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "text": {&#13;
+                                          "type": "string"&#13;
+                                        },&#13;
+                                        "isCorrectAnswer": {&#13;
+                                          "type": "boolean"&#13;
+                                        }&#13;
+                                      },&#13;
+                                      "required": [&#13;
+                                        "id",&#13;
+                                        "text",&#13;
+                                        "isCorrectAnswer"&#13;
+                                      ]&#13;
+                                    }&#13;
+                                  ]&#13;
+                                }&#13;
+                              },&#13;
+                              "required": [&#13;
+                                "id",&#13;
+                                "order",&#13;
+                                "question",&#13;
+                                "correctAnswer",&#13;
+                                "choices"&#13;
+                              ]&#13;
+                            }&#13;
+                          ]&#13;
+                        }&#13;
+                      },&#13;
+                      "required": [&#13;
+                        "id",&#13;
+                        "name",&#13;
+                        "questions"&#13;
+                      ]&#13;
+                    }&#13;
+                  },&#13;
+                  "required": [&#13;
+                    "id",&#13;
+                    "state",&#13;
+                    "number",&#13;
+                    "quiz"&#13;
+                  ]&#13;
+                }&#13;
+              },&#13;
+              "required": [&#13;
+                "getQuizInstanceByAccessCode"&#13;
+              ]&#13;
+            }&#13;
+          },&#13;
+          "required": [&#13;
+            "quizifier"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+      "required": [&#13;
+        "xSncQuiznow"&#13;
+      ]&#13;
+    }&#13;
+  },&#13;
+  "required": [&#13;
+    "data"&#13;
+  ]&#13;
+}</output_schema>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+  "name": "accessCode",&#13;
+  "label": "Access Code",&#13;
+  "description": "The access code for the quiz instance, e.g. XYZA",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": ""&#13;
+}&#13;
+]</props>
+        <query>query GetQuizInstanceByAC($accessCode:ID!) {&#13;
+  xSncQuiznow {&#13;
+    quizifier {&#13;
+      getQuizInstanceByAccessCode(accessCode: $accessCode) {&#13;
+        id&#13;
+        state&#13;
+        number&#13;
+        quiz {&#13;
+          id&#13;
+          name&#13;
+          questions {&#13;
+            id&#13;
+            order&#13;
+            question&#13;
+            correctAnswer&#13;
+            choices {&#13;
+              id&#13;
+              text&#13;
+              isCorrectAnswer&#13;
+            }&#13;
+          }&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}</query>
+        <required_translations>[ {
+  "message" : "Access Code",
+  "comment" : ""
+}, {
+  "message" : "The access code for the quiz instance, e.g. XYZA",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-01-23 18:29:00</sys_created_on>
+        <sys_id>a4ec206f47373550638eaa42736d4327</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Get Quiz Instance by Access Code</sys_name>
+        <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_a4ec206f47373550638eaa42736d4327</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-01-23 18:38:05</sys_updated_on>
+        <type>query</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=a4ec206f47373550638eaa42736d4327"/>
+</record_update>

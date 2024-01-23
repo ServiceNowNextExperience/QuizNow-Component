@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="68c7aa0f470e7910638eaa42736d4330" label="Quiz question" max_length="40" name="x_snc_quiznow_quiz_question" type="collection">
+        <element label="Correct answer" max_length="32" name="correct_answer" reference="x_snc_quiznow_quiz_question_choice" reference_qual="javascript:&quot;question=&quot; + current.sys_id" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element label="Image" max_length="40" name="image" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="-1" label="Order" max_length="40" name="order" type="integer"/>
+        <element display="true" label="Question" max_length="100" name="question" type="string"/>
+        <element label="Quiz" max_length="32" name="quiz" reference="x_snc_quiznow_quiz" type="reference"/>
+        <index name="index">
+            <element name="correct_answer"/>
+        </index>
+        <index name="index2">
+            <element name="quiz"/>
+        </index>
+    </element>
+</database>

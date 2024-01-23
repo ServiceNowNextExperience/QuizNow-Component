@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>Game</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-01-22 17:23:40</sys_created_on>
+        <sys_id>79d49f8f47ffb150638eaa42736d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Game</sys_name>
+        <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
+        <sys_update_name>sys_ux_screen_type_79d49f8f47ffb150638eaa42736d43f6</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-01-22 17:23:40</sys_updated_on>
+    </sys_ux_screen_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=79d49f8f47ffb150638eaa42736d43f6"/>
+</record_update>

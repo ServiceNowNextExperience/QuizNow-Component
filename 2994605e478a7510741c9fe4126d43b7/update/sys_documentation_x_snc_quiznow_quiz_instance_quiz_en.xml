@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="quiz" label="Quiz" language="en" table="x_snc_quiznow_quiz_instance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>quiz</element>
+            <help/>
+            <hint/>
+            <label>Quiz</label>
+            <language>en</language>
+            <name>x_snc_quiznow_quiz_instance</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>brad.tilton</sys_created_by>
+            <sys_created_on>2023-11-03 13:53:57</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Quiz</sys_name>
+            <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_quiznow_quiz_instance_quiz_en</sys_update_name>
+            <sys_updated_by>brad.tilton</sys_updated_by>
+            <sys_updated_on>2023-11-03 13:53:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
