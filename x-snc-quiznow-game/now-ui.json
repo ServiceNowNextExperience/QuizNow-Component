@@ -1,0 +1,86 @@
+{
+    "components": {
+        "snc-quiznow-game": {
+            "innerComponents": [],
+            "uiBuilder": {
+                "associatedTypes": ["global.core", "global.landing-page"],
+                "label": "QuizNow",
+                "icon": "document-outline",
+                "description": "QuizNow",
+                "category": "primitives"
+            },
+            "properties": [
+                {
+                    "name": "mode",
+                    "label": "Mode",
+                    "fieldType": "choice",
+                    "typeMetadata": {
+                        "choices": [
+                            {
+                                "label": "Presenter",
+                                "value": "presenter"
+                            },
+                            {
+                                "label": "Player",
+                                "value": "player"
+                            }
+                        ],
+                        "schema": {
+                            "type": "string",
+                            "enum": ["presenter", "player"]
+                        }
+                    }
+                },
+                {
+                    "name": "question",
+                    "label": "Question",
+                    "fieldType": "string"
+                },
+                {
+                    "name": "choices",
+                    "label": "Choices",
+                    "fieldType": "json",
+                    "typeMetadata": {
+                        "schema": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "choice": "choice",
+                                    "correctAnswer": false,
+                                    "selectedCount": 0,
+                                    "sysId": "sysId"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "timeLimit",
+                    "label": "Time Limit",
+                    "fieldType": "number"
+                },
+                {
+                    "name": "timeElapsed",
+                    "label": "Time Elapsed",
+                    "fieldType": "number"
+                },
+                {
+                    "name": "choiceSelected",
+                    "label": "Choice Selected",
+                    "fieldType": "boolean"
+                },
+                {
+                    "name": "questionOver",
+                    "label": "Question Over",
+                    "fieldType": "boolean"
+                },
+                {
+                    "name": "showScoreBoard",
+                    "label": "Show Score Board",
+                    "fieldType": "boolean"
+                }
+            ]
+        }
+    },
+    "scopeName": "x_snc_quiznow_game"
+}

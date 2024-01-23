@@ -1,0 +1,31 @@
+{
+    "name": "snc-quiznow-game",
+    "version": "0.0.1",
+    "private": false,
+    "description": "",
+    "keywords": [
+        "ServiceNow",
+        "Now Experience UI Component",
+        "snc-quiznow-game"
+    ],
+    "readme": "./README.md",
+    "engines": {
+        "node": ">=8.6.0",
+        "npm": ">=5.3.0"
+    },
+    "module": "src/index.js",
+    "dependencies": {
+        "@servicenow/cli-archetype": "24.0.0",
+        "@servicenow/cli-component-archetype": "24.0.0",
+        "@servicenow/library-translate": "quebec",
+        "@servicenow/sass-kit": "quebec",
+        "@servicenow/sass-theme": "quebec",
+        "@servicenow/ui-core": "quebec",
+        "@servicenow/ui-renderer-snabbdom": "quebec",
+        "chart.js": "^3.9.1"
+    },
+    "devDependencies": {
+        "@servicenow/cli-archetype-dev": "24.0.0",
+        "@servicenow/cli-component-archetype-dev": "24.0.0"
+    }
+}
