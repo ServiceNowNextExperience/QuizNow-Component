@@ -119,8 +119,9 @@ createCustomElement("snc-quiznow-game", {
 		},
 	},
 	actionHandlers: {
-		QUESTION_ANSWERED: ({ properties: { mode }, action, dispatch }) => {
-			if (mode === "player") dispatch("CHOICE_SELECTED", { ...action.payload });
+		QUESTION_ANSWERED: ({ properties: { mode }, action: { payload }, dispatch }) => {
+			console.log("QUESTION_ANSWERED", { mode, payload });
+			if (mode === "player") dispatch("CHOICE_SELECTED", payload);
 		},
 	},
 });
