@@ -68,14 +68,14 @@
                                         "text": {&#13;
                                           "type": "string"&#13;
                                         },&#13;
-                                        "isCorrectAnswer": {&#13;
+                                        "correctAnswer": {&#13;
                                           "type": "boolean"&#13;
                                         }&#13;
                                       },&#13;
                                       "required": [&#13;
                                         "id",&#13;
                                         "text",&#13;
-                                        "isCorrectAnswer"&#13;
+                                        "correctAnswer"&#13;
                                       ]&#13;
                                     },&#13;
                                     {&#13;
@@ -87,14 +87,14 @@
                                         "text": {&#13;
                                           "type": "string"&#13;
                                         },&#13;
-                                        "isCorrectAnswer": {&#13;
+                                        "correctAnswer": {&#13;
                                           "type": "boolean"&#13;
                                         }&#13;
                                       },&#13;
                                       "required": [&#13;
                                         "id",&#13;
                                         "text",&#13;
-                                        "isCorrectAnswer"&#13;
+                                        "correctAnswer"&#13;
                                       ]&#13;
                                     },&#13;
                                     {&#13;
@@ -106,14 +106,14 @@
                                         "text": {&#13;
                                           "type": "string"&#13;
                                         },&#13;
-                                        "isCorrectAnswer": {&#13;
+                                        "correctAnswer": {&#13;
                                           "type": "boolean"&#13;
                                         }&#13;
                                       },&#13;
                                       "required": [&#13;
                                         "id",&#13;
                                         "text",&#13;
-                                        "isCorrectAnswer"&#13;
+                                        "correctAnswer"&#13;
                                       ]&#13;
                                     },&#13;
                                     {&#13;
@@ -125,14 +125,14 @@
                                         "text": {&#13;
                                           "type": "string"&#13;
                                         },&#13;
-                                        "isCorrectAnswer": {&#13;
+                                        "correctAnswer": {&#13;
                                           "type": "boolean"&#13;
                                         }&#13;
                                       },&#13;
                                       "required": [&#13;
                                         "id",&#13;
                                         "text",&#13;
-                                        "isCorrectAnswer"&#13;
+                                        "correctAnswer"&#13;
                                       ]&#13;
                                     }&#13;
                                   ]&#13;
@@ -173,14 +173,14 @@
                                         "text": {&#13;
                                           "type": "string"&#13;
                                         },&#13;
-                                        "isCorrectAnswer": {&#13;
+                                        "correctAnswer": {&#13;
                                           "type": "boolean"&#13;
                                         }&#13;
                                       },&#13;
                                       "required": [&#13;
                                         "id",&#13;
                                         "text",&#13;
-                                        "isCorrectAnswer"&#13;
+                                        "correctAnswer"&#13;
                                       ]&#13;
                                     },&#13;
                                     {&#13;
@@ -192,14 +192,14 @@
                                         "text": {&#13;
                                           "type": "string"&#13;
                                         },&#13;
-                                        "isCorrectAnswer": {&#13;
+                                        "correctAnswer": {&#13;
                                           "type": "boolean"&#13;
                                         }&#13;
                                       },&#13;
                                       "required": [&#13;
                                         "id",&#13;
                                         "text",&#13;
-                                        "isCorrectAnswer"&#13;
+                                        "correctAnswer"&#13;
                                       ]&#13;
                                     },&#13;
                                     {&#13;
@@ -211,14 +211,14 @@
                                         "text": {&#13;
                                           "type": "string"&#13;
                                         },&#13;
-                                        "isCorrectAnswer": {&#13;
+                                        "correctAnswer": {&#13;
                                           "type": "boolean"&#13;
                                         }&#13;
                                       },&#13;
                                       "required": [&#13;
                                         "id",&#13;
                                         "text",&#13;
-                                        "isCorrectAnswer"&#13;
+                                        "correctAnswer"&#13;
                                       ]&#13;
                                     },&#13;
                                     {&#13;
@@ -230,14 +230,14 @@
                                         "text": {&#13;
                                           "type": "string"&#13;
                                         },&#13;
-                                        "isCorrectAnswer": {&#13;
+                                        "correctAnswer": {&#13;
                                           "type": "boolean"&#13;
                                         }&#13;
                                       },&#13;
                                       "required": [&#13;
                                         "id",&#13;
                                         "text",&#13;
-                                        "isCorrectAnswer"&#13;
+                                        "correctAnswer"&#13;
                                       ]&#13;
                                     }&#13;
                                   ]&#13;
@@ -318,7 +318,7 @@
             choices {&#13;
               id&#13;
               text&#13;
-              isCorrectAnswer&#13;
+              correctAnswer&#13;
             }&#13;
           }&#13;
         }&#13;
@@ -343,14 +343,14 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-01-23 18:29:00</sys_created_on>
         <sys_id>a4ec206f47373550638eaa42736d4327</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Get Quiz Instance by Access Code</sys_name>
         <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
         <sys_policy/>
         <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
         <sys_update_name>sys_ux_data_broker_graphql_a4ec206f47373550638eaa42736d4327</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-01-23 18:38:05</sys_updated_on>
+        <sys_updated_on>2024-01-24 22:07:56</sys_updated_on>
         <type>query</type>
         <use_record_domain>false</use_record_domain>
     </sys_ux_data_broker_graphql>
