@@ -42,13 +42,13 @@ const view = ({
 				{!showScoreBoard || mode === "player" ? (
 					<section>
 						<ul>
-							{choices.map(({ choice, correctAnswer, sysId }) => {
+							{choices.map(({ text, correctAnswer, id }) => {
 								return (
 									<li>
 										<snc-choice
-											choice={choice}
+											text={text}
 											correctAnswer={correctAnswer}
-											sysId={sysId}
+											id={id}
 											choiceSelected={choiceSelected}
 											questionOver={questionOver}
 										></snc-choice>
@@ -77,28 +77,28 @@ createCustomElement("snc-quiznow-game", {
 		choices: {
 			default: [
 				{
-					choice: "1",
+					text: "1",
 					correctAnswer: false,
 					selectedCount: 0,
-					sysId: "zQD4wptaJrPBunMkD72ccmW3p8vjj9Sy",
+					id: "zQD4wptaJrPBunMkD72ccmW3p8vjj9Sy",
 				},
 				{
-					choice: "2",
+					text: "2",
 					correctAnswer: false,
 					selectedCount: 0,
-					sysId: "ucOcIDn0xrKvZf4uDSz6OdjFyHtvHjz8",
+					id: "ucOcIDn0xrKvZf4uDSz6OdjFyHtvHjz8",
 				},
 				{
-					choice: "3",
+					text: "3",
 					correctAnswer: false,
 					selectedCount: 0,
-					sysId: "m7MT04eEM168F1EQtIsZXDtJW6479fP7",
+					id: "m7MT04eEM168F1EQtIsZXDtJW6479fP7",
 				},
 				{
-					choice: "avocado",
+					text: "avocado",
 					correctAnswer: true,
 					selectedCount: 0,
-					sysId: "w1ntjJu3aq76seCBNGRB8r7XnnoHBY41",
+					id: "w1ntjJu3aq76seCBNGRB8r7XnnoHBY41",
 				},
 			],
 		},
@@ -120,7 +120,7 @@ createCustomElement("snc-quiznow-game", {
 	},
 	actionHandlers: {
 		QUESTION_ANSWERED: ({ properties: { mode }, action: { payload }, dispatch }) => {
-			console.log("QUESTION_ANSWERED", { mode, payload });
+			console.log("CHOICE_SELECTED", { mode, payload });
 			if (mode === "player") dispatch("CHOICE_SELECTED", payload);
 		},
 	},
