@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[
+    
+]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <dispatched_events/>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>QuizNow Component</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "fieldType": "choice",
+        "label": "Mode",
+        "name": "mode",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Presenter",
+                    "value": "presenter"
+                },
+                {
+                    "label": "Player",
+                    "value": "player"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "presenter",
+                    "player"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "fieldType": "string",
+        "label": "Question",
+        "name": "question",
+        "valueType": "string"
+    },
+    {
+        "description": "Array of choices to present, in JSON format with the following format: [{text: 'Answer A', id: '{sys_id}', correctAnswer: true, selectedCount: 1}] (selectedCount is the index of the pre-selected item)",
+        "fieldType": "json",
+        "label": "Choices",
+        "name": "choices",
+        "typeMetadata": {
+            "schema": {
+                "items": [
+                    {
+                        "properties": {
+                            "correctAnswer": {
+                                "type": "boolean"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "selectedCount": {
+                                "type": "number"
+                            },
+                            "text": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    }
+                ],
+                "type": "array"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "fieldType": "number",
+        "label": "Time Limit Seconds",
+        "name": "timeLimit",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "number",
+        "label": "Time Elapsed Seconds",
+        "name": "timeElapsed",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "boolean",
+        "label": "Choice Selected",
+        "name": "choiceSelected",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "boolean",
+        "label": "Question Over",
+        "name": "questionOver",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "boolean",
+        "label": "Show Score Board",
+        "name": "showScoreBoard",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="snc-quiznow-game">26bf22f96a210bc1f5734178e3bea6a6</root_component>
+        <root_component_config>{"mode":"@context/mode","question":"@context/question","choices":"@context/choices","timeLimit":"@context/timeLimit","timeElapsed":"@context/timeElapsed","choiceSelected":"@context/choiceSelected","questionOver":"@context/questionOver","showScoreBoard":"@context/showScoreBoard"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_properties/>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-01-25 19:07:16</sys_created_on>
+        <sys_id>d233eb01b704e929eea18d754bd7f000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>QuizNow Component</sys_name>
+        <sys_package display_value="QuizNow Component" source="x_snc_quiznow_game">4e49cbc8834c0a5046450878beaad343</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QuizNow Component">4e49cbc8834c0a5046450878beaad343</sys_scope>
+        <sys_update_name>sys_ux_macroponent_d233eb01b704e929eea18d754bd7f000</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-01-25 19:07:16</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=d233eb01b704e929eea18d754bd7f000"/>
+</record_update>
