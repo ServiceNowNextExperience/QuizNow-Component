@@ -3,17 +3,17 @@ import snabbdom from "@servicenow/ui-renderer-snabbdom";
 
 const view = (
 	{
-		properties: { choice, correctAnswer, sysId, answerSelected, questionOver },
+		properties: { text, correctAnswer, id, answerSelected, questionOver },
 	},
 	{ dispatch }
 ) => {
 	return (
 		<button
 			type="button"
-			on-click={() => dispatch("QUESTION_ANSWERED", { choiceId: sysId })}
+			on-click={() => dispatch("QUESTION_ANSWERED", { choiceId: id })}
 			disabled={answerSelected}
 		>
-			{choice}
+			{text}
 		</button>
 	);
 };
@@ -22,13 +22,13 @@ createCustomElement("snc-choice", {
 	renderer: { type: snabbdom },
 	view,
 	properties: {
-		choice: {
+		text: {
 			default: "avocado",
 		},
 		correctAnswer: {
 			default: false,
 		},
-		sysId: {
+		id: {
 			default: "tciUgfsgppidn7V7mc6yvzPEr7tm9jSl",
 		},
 		answerSelected: {
