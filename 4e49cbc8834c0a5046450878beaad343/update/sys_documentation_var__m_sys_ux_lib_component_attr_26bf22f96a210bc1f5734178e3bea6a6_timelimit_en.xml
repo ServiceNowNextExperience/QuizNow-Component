@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="timeLimit" label="Time Limit Seconds" language="en" table="var__m_sys_ux_lib_component_attr_26bf22f96a210bc1f5734178e3bea6a6">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>timeLimit</element>
+            <help/>
+            <hint/>
+            <label>Time Limit Seconds</label>
+            <language>en</language>
+            <name>var__m_sys_ux_lib_component_attr_26bf22f96a210bc1f5734178e3bea6a6</name>
+            <plural>Time Limit Seconds</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-01-25 19:07:12</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Time Limit Seconds</sys_name>
+            <sys_package display_value="QuizNow Component" source="x_snc_quiznow_game">4e49cbc8834c0a5046450878beaad343</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="QuizNow Component">4e49cbc8834c0a5046450878beaad343</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_ux_lib_component_attr_26bf22f96a210bc1f5734178e3bea6a6_timeLimit_en</sys_update_name>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-01-25 19:07:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
