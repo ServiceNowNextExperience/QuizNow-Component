@@ -10,15 +10,15 @@
     // https://quiznow.service-now.com/nav_to.do?uri=x_snc_quiznow_quiz_instance.do?sys_id=aaf453cf47ffb150638eaa42736d4398
     var gr = new GlideRecord('x_snc_quiznow_quiz_instance');
 
-    const { accessCode, id } = env.getArguments();
+    const args = env.getArguments();
 
-	const sysId = id || env.getSource();
-    if (sysId) {
-        gr.query('sys_id', sysId);
-    }
-    else if (accessCode) {
-        gr.query('access_code', accessCode);
-    }
+	if(args.accessCode){
+		gr.query('access_code', args.accessCode);
+	} else {
+		var sysId = env.getArguments().id || env.getSource();
+
+		gr.query('sys_id', sysId);
+	}
 
     return gr;
 })(env);]]></script>
@@ -26,13 +26,13 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-01-22 18:32:48</sys_created_on>
         <sys_id>c18463cf4733f150638eaa42736d4332</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Quiz Instance Resolver</sys_name>
         <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
         <sys_policy/>
         <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
         <sys_update_name>sys_graphql_resolver_c18463cf4733f150638eaa42736d4332</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-01-23 18:21:37</sys_updated_on>
+        <sys_updated_on>2024-01-22 19:02:05</sys_updated_on>
     </sys_graphql_resolver>
 </record_update>

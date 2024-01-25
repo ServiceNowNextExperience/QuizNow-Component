@@ -5,9 +5,9 @@
         <enforce_acl/>
         <name>Quizifier</name>
         <namespace>quizifier</namespace>
-        <paths>Choice:correctAnswer,Choice:id,Choice:number,Choice:order,Choice:text,Mutation:newUser,Query:getQuestion,Query:getQuestionByAccessCode,Query:getQuestionsByAccessCode,Query:getQuiz,Query:getQuizInstance,Query:getQuizInstanceByAccessCode,Question:choices,Question:correctAnswer,Question:id,Question:number,Question:order,Question:question,Question:quiz,Quiz:id,Quiz:name,Quiz:number,Quiz:questions,QuizInstance:accessCode,QuizInstance:id,QuizInstance:number,QuizInstance:quiz,QuizInstance:state</paths>
+        <paths>Choice:id,Choice:isCorrectAnswer,Choice:number,Choice:order,Choice:text,Mutation:newUser,Query:getQuestion,Query:getQuiz,Query:getQuizInstance,Query:getQuizInstanceByAccessCode,Question:choices,Question:correctAnswer,Question:id,Question:number,Question:order,Question:question,Question:quiz,Quiz:id,Quiz:name,Quiz:number,Quiz:questions,QuizInstance:accessCode,QuizInstance:id,QuizInstance:number,QuizInstance:quiz,QuizInstance:state</paths>
         <requires_acl_authorization>false</requires_acl_authorization>
-        <requires_authentication>true</requires_authentication>
+        <requires_authentication>false</requires_authentication>
         <requires_snc_internal_role>true</requires_snc_internal_role>
         <schema>schema {&#13;
     query: Query&#13;
@@ -17,9 +17,6 @@
 type Query {&#13;
 	#getQuestionsForQuiz(id: ID!) : [Question]&#13;
 	getQuestion(id: ID!) : Question&#13;
-	# E.g. get question number 3 (1 based) for instance XYZA&#13;
-	getQuestionsByAccessCode(accessCode: ID!) : [Question]&#13;
-	getQuestionByAccessCode(accessCode: ID!, ordinal: Int!) : Question&#13;
 	getQuizInstanceByAccessCode(accessCode: ID!) : QuizInstance&#13;
 	getQuizInstance(id: ID!) : QuizInstance&#13;
 	getQuiz(id:ID!) : Quiz&#13;
@@ -39,7 +36,7 @@ type QuizInstance {&#13;
 	state: String @source(value:"state.display_value")&#13;
 	number: String @source(value: "number.value")&#13;
 	accessCode: String @source(value: "access_code.value")&#13;
-	quiz: Quiz @source(value:"quiz.value")&#13;
+	quiz: [Quiz] @source(value:"quiz.value")&#13;
 }&#13;
 &#13;
 type Quiz {&#13;
@@ -63,7 +60,7 @@ type Choice {&#13;
 	id: ID @source(value: "sys_id.value")&#13;
 	number: String @source(value: "number.value")&#13;
 	text: String @source(value: "choice.value")&#13;
-	correctAnswer: Boolean @source(value: "correct_answer.value")&#13;
+	isCorrectAnswer: Boolean @source(value: "correct_answer.value")&#13;
 	order: Int @source(value:"order.value")&#13;
 }&#13;
 </schema>
@@ -71,14 +68,14 @@ type Choice {&#13;
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-01-19 23:06:12</sys_created_on>
         <sys_id>8256c5d2477bfd10638eaa42736d439e</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Quizifier</sys_name>
         <sys_package display_value="QuizNow" source="x_snc_quiznow">2994605e478a7510741c9fe4126d43b7</sys_package>
         <sys_policy/>
         <sys_scope display_value="QuizNow">2994605e478a7510741c9fe4126d43b7</sys_scope>
         <sys_update_name>sys_graphql_schema_8256c5d2477bfd10638eaa42736d439e</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-01-24 22:03:12</sys_updated_on>
+        <sys_updated_on>2024-01-22 19:46:17</sys_updated_on>
         <type_names/>
     </sys_graphql_schema>
 </record_update>
