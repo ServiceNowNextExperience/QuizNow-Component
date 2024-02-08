@@ -1,98 +1,116 @@
 {
-  "components": {
-    "snc-quiznow-game": {
-      "innerComponents": [],
-      "uiBuilder": {
-        "associatedTypes": ["global.core", "global.landing-page"],
-        "label": "QuizNow Component",
-        "icon": "document-outline",
-        "description": "The component used to play the QuizNow game from the QuizNow Application!",
-        "category": "primitives"
-      },
-      "properties": [
-        {
-          "name": "mode",
-          "label": "Mode",
-          "fieldType": "choice",
-          "typeMetadata": {
-            "choices": [
-              {
-                "label": "Presenter",
-                "value": "presenter"
-              },
-              {
-                "label": "Player",
-                "value": "player"
-              }
+    "components": {
+        "snc-quiznow-game": {
+            "innerComponents": [
+                "snc-timer",
+                "snc-choice",
+                "snc-choice-scoreboard"
             ],
-            "schema": {
-              "type": "string",
-              "enum": ["presenter", "player"]
-            }
-          }
-        },
-        {
-          "name": "question",
-          "label": "Question",
-          "fieldType": "string"
-        },
-        {
-          "name": "choices",
-          "label": "Choices",
-          "description": "Array of choices to present, in JSON format with the following format: [{text: 'Answer A', id: '{sys_id}', correctAnswer: true, selectedCount: 1}] (selectedCount is the index of the pre-selected item)",
-          "fieldType": "json",
-          "typeMetadata": {
-            "schema": {
-              "type": "array",
-              "items": [
+            "uiBuilder": {
+                "associatedTypes": ["global.core", "global.landing-page"],
+                "label": "QuizNow Component",
+                "icon": "document-outline",
+                "description": "The component used to play the QuizNow game from the QuizNow Application!",
+                "category": "primitives"
+            },
+            "actions": [
                 {
-                  "type": "object",
-                  "properties": {
-                    "text": {
-                      "type": "string"
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "correctAnswer": {
-                      "type": "boolean"
-                    },
-                    "selectedCount": {
-                      "type": "number"
-                    }
-                  }
+                    "name": "CHOICE_SELECTED",
+                    "description": "Will send the choice the player selected for the question",
+                    "label": "Choice Selected",
+                    "payload": [
+                        {
+                            "name": "choiceId",
+                            "label": "Id",
+                            "description": "sys_id of the Quiz Question Choice record"
+                        }
+                    ]
                 }
-              ]
-            }
-          }
-        },
-        {
-          "name": "timeLimit",
-          "label": "Time Limit Seconds",
-          "fieldType": "number"
-        },
-        {
-          "name": "timeElapsed",
-          "label": "Time Elapsed Seconds",
-          "fieldType": "number"
-        },
-        {
-          "name": "choiceSelected",
-          "label": "Choice Selected",
-          "fieldType": "boolean"
-        },
-        {
-          "name": "questionOver",
-          "label": "Question Over",
-          "fieldType": "boolean"
-        },
-        {
-          "name": "showScoreBoard",
-          "label": "Show Score Board",
-          "fieldType": "boolean"
+            ],
+            "properties": [
+                {
+                    "name": "mode",
+                    "label": "Mode",
+                    "fieldType": "choice",
+                    "typeMetadata": {
+                        "choices": [
+                            {
+                                "label": "Presenter",
+                                "value": "presenter"
+                            },
+                            {
+                                "label": "Player",
+                                "value": "player"
+                            }
+                        ],
+                        "schema": {
+                            "type": "string",
+                            "enum": ["presenter", "player"]
+                        }
+                    }
+                },
+                {
+                    "name": "question",
+                    "label": "Question",
+                    "fieldType": "string"
+                },
+                {
+                    "name": "choices",
+                    "label": "Choices",
+                    "description": "Array of choices to present, in JSON format with the following format: [{text: 'Answer A', id: '{sys_id}', correctAnswer: true, selectedCount: 1}] (selectedCount is the index of the pre-selected item)",
+                    "fieldType": "json",
+                    "typeMetadata": {
+                        "schema": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "text": {
+                                            "type": "string"
+                                        },
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "correctAnswer": {
+                                            "type": "boolean"
+                                        },
+                                        "selectedCount": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "timeLimit",
+                    "label": "Time Limit Seconds",
+                    "fieldType": "number"
+                },
+                {
+                    "name": "timeElapsed",
+                    "label": "Time Elapsed Seconds",
+                    "fieldType": "number"
+                },
+                {
+                    "name": "choiceSelected",
+                    "label": "Choice Selected",
+                    "fieldType": "boolean"
+                },
+                {
+                    "name": "questionOver",
+                    "label": "Question Over",
+                    "fieldType": "boolean"
+                },
+                {
+                    "name": "showScoreBoard",
+                    "label": "Show Score Board",
+                    "fieldType": "boolean"
+                }
+            ]
         }
-      ]
-    }
-  },
-  "scopeName": "x_snc_quiznow_game"
+    },
+    "scopeName": "x_snc_quiznow_game"
 }
