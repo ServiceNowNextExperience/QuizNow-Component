@@ -4,16 +4,11 @@
         <array>false</array>
         <attributes/>
         <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
+        <calculation/>
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Mode</column_label>
+        <column_label>mode</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -43,7 +38,7 @@
         <model_table/>
         <name>var__m_sys_ux_lib_component_attr_26bf22f96a210bc1f5734178e3bea6a6</name>
         <next_element/>
-        <order>100</order>
+        <order/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -66,7 +61,7 @@
         <sys_scope display_value="QuizNow Component">4e49cbc8834c0a5046450878beaad343</sys_scope>
         <sys_update_name>sys_ux_lib_component_attr_9b46baa712091cb99a9a2c86828d7749</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-01-25 19:07:09</sys_updated_on>
+        <sys_updated_on>2024-02-23 17:35:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
